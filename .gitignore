@@ -1,0 +1,6 @@
+local-site/
+start-site.bat
+*.zip
+.vscode/
+.DS_Store
+Thumbs.db
