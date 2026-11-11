@@ -94,7 +94,7 @@ function dh_handle_booking() {
 		update_post_meta( $booking_id, '_dhb_' . $k, $v );
 	}
 
-	$ref = 'DH-' . str_pad( (string) $booking_id, 5, '0', STR_PAD_LEFT );
+	$ref = 'CW-' . str_pad( (string) $booking_id, 5, '0', STR_PAD_LEFT );
 
 	// Notifications.
 	$lines = array(
@@ -212,7 +212,7 @@ function dh_booking_meta_box( $post ) {
 		}
 	}
 	$rows = array(
-		__( 'Reference', 'crestway' ) => 'DH-' . str_pad( (string) $post->ID, 5, '0', STR_PAD_LEFT ),
+		__( 'Reference', 'crestway' ) => 'CW-' . str_pad( (string) $post->ID, 5, '0', STR_PAD_LEFT ),
 		__( 'Car', 'crestway' )       => get_the_title( (int) $m( 'car_id' ) ),
 		__( 'Name', 'crestway' )      => $m( 'name' ),
 		__( 'Email', 'crestway' )     => $m( 'email' ),
